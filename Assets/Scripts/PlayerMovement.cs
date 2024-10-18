@@ -50,10 +50,6 @@ public class PlayerMovement : MonoBehaviour
     public MovementState state;
     //[SerializeField] private GravityChange _gravityChange;
 
-    public PlayerCamera pCamera;
-
-    private Vector3 currentRotation;
-
     public enum MovementState
     {
         walking,
