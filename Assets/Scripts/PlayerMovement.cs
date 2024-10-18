@@ -95,8 +95,6 @@ public class PlayerMovement : MonoBehaviour
         {
             GetComponent<GravityComponent>().gravityStatus = 0;
 
-            //GetComponent<GravityComponent>().SwitchGravity();
-
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(0, yRotation, 0f);
@@ -105,8 +103,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && GetComponent<GravityComponent>().gravityStatus != 1)
         {
             GetComponent<GravityComponent>().gravityStatus = 1;
-
-            //SwitchGravity();
 
             yRotation = transform.rotation.y;
 
@@ -117,8 +113,6 @@ public class PlayerMovement : MonoBehaviour
         {
             GetComponent<GravityComponent>().gravityStatus = 2;
 
-            //SwitchGravity();
-
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(-90, yRotation, 0f);
@@ -128,7 +122,6 @@ public class PlayerMovement : MonoBehaviour
         {
             GetComponent<GravityComponent>().gravityStatus = 3;
 
-            //SwitchGravity();
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(90, yRotation, 0f);
@@ -138,8 +131,6 @@ public class PlayerMovement : MonoBehaviour
         {
             GetComponent<GravityComponent>().gravityStatus = 4;
 
-            //SwitchGravity();
-
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(0f, yRotation, -90f);
@@ -148,8 +139,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I) && GetComponent<GravityComponent>().gravityStatus != 5)
         {
             GetComponent<GravityComponent>().gravityStatus = 5;
-
-            //SwitchGravity();
 
             yRotation = transform.rotation.y;
 
