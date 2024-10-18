@@ -40,9 +40,6 @@ public class PlayerMovement : MonoBehaviour
     private RaycastHit slopeHit;
     private bool exitingSlope;
 
-
-    public Transform orientation;
-
     private float horizontalInput;
     private float verticalInput;
 
