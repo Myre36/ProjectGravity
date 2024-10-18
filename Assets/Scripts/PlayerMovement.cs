@@ -50,6 +50,10 @@ public class PlayerMovement : MonoBehaviour
     public MovementState state;
     //[SerializeField] private GravityChange _gravityChange;
 
+    public PlayerCamera pCamera;
+
+    private Vector3 currentRotation;
+
     public enum MovementState
     {
         walking,
@@ -98,6 +102,8 @@ public class PlayerMovement : MonoBehaviour
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(0, yRotation, 0f);
+
+            //pCamera.Flip(new Vector3(0, yRotation, 0f));
         }
         //Up gravity
         if (Input.GetKeyDown(KeyCode.R) && GetComponent<GravityComponent>().gravityStatus != 1)
@@ -107,6 +113,8 @@ public class PlayerMovement : MonoBehaviour
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(-180f, yRotation, 0f);
+
+            //pCamera.Flip(new Vector3(-180f, yRotation, 0f));
         }
         //North gravity
         if (Input.GetKeyDown(KeyCode.T) && GetComponent<GravityComponent>().gravityStatus != 2)
@@ -116,6 +124,8 @@ public class PlayerMovement : MonoBehaviour
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(-90, yRotation, 0f);
+
+            //pCamera.Flip(new Vector3(-90, yRotation, 0f));
         }
         //South gravity
         if (Input.GetKeyDown(KeyCode.Y) && GetComponent<GravityComponent>().gravityStatus != 3)
@@ -125,6 +135,8 @@ public class PlayerMovement : MonoBehaviour
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(90, yRotation, 0f);
+
+            //pCamera.Flip(new Vector3(90, yRotation, 0f));
         }
         //West gravity
         if (Input.GetKeyDown(KeyCode.U) && GetComponent<GravityComponent>().gravityStatus != 4)
@@ -134,6 +146,8 @@ public class PlayerMovement : MonoBehaviour
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(0f, yRotation, -90f);
+
+            //pCamera.Flip(new Vector3(0, yRotation, -90f));
         }
         //East gravity
         if (Input.GetKeyDown(KeyCode.I) && GetComponent<GravityComponent>().gravityStatus != 5)
@@ -143,6 +157,8 @@ public class PlayerMovement : MonoBehaviour
             yRotation = transform.rotation.y;
 
             transform.rotation = Quaternion.Euler(0f, yRotation, 90f);
+
+            //pCamera.Flip(new Vector3(0, yRotation, 90f));
         }
     }
 
