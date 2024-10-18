@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-
+    public int bulletType = 0;
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Interactable"))
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }

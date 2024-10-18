@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
         float yRotation;
 
         //Normal gravity
-        if (Input.GetKeyDown(KeyCode.R) && GetComponent<GravityComponent>().gravityStatus != 0)
+        if (Input.GetKeyDown(KeyCode.E) && GetComponent<GravityComponent>().gravityStatus != 0)
         {
             GetComponent<GravityComponent>().gravityStatus = 0;
 
@@ -100,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, yRotation, 0f);
         }
         //Up gravity
-        if (Input.GetKeyDown(KeyCode.E) && GetComponent<GravityComponent>().gravityStatus != 1)
+        if (Input.GetKeyDown(KeyCode.R) && GetComponent<GravityComponent>().gravityStatus != 1)
         {
             GetComponent<GravityComponent>().gravityStatus = 1;
 
