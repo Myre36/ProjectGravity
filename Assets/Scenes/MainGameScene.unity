@@ -875,6 +875,8 @@ MonoBehaviour:
     m_Bits: 64
   maxSlopeAngle: 40
   state: 0
+  cam: {fileID: 963194227}
+  headObject: {fileID: 254339836}
 --- !u!114 &222275538
 MonoBehaviour:
   m_ObjectHideFlags: 0
