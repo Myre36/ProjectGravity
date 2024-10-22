@@ -248,17 +248,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Limiting speed on ground or in the air
-        else
+        /*else
         {
             Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
             //Limit velocity if needed
-            if (flatVel.magnitude > moveSpeed)
+            if (rb.velocity.magnitude > moveSpeed)
             {
                 Vector3 limitedVel = flatVel.normalized * moveSpeed;
                 rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
             }
-        }
+        }*/
     }
 
     private void Jump()
