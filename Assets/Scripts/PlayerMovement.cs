@@ -95,9 +95,9 @@ public class PlayerMovement : MonoBehaviour
         {
             GetComponent<GravityComponent>().gravityStatus = 0;
 
-            yRotation = transform.rotation.y;
+            yRotation = transform.localRotation.y;
 
-            transform.rotation = Quaternion.Euler(0, yRotation, 0f);
+            transform.localRotation = Quaternion.Euler(0, yRotation, 0f);
 
             //pCamera.Flip(new Vector3(0, yRotation, 0f));
         }
@@ -106,9 +106,9 @@ public class PlayerMovement : MonoBehaviour
         {
             GetComponent<GravityComponent>().gravityStatus = 1;
 
-            yRotation = transform.rotation.y;
+            yRotation = transform.localRotation.y;
 
-            transform.rotation = Quaternion.Euler(-180f, yRotation, 0f);
+            transform.localRotation = Quaternion.Euler(0f, yRotation, -180f);
 
             //pCamera.Flip(new Vector3(-180f, yRotation, 0f));
         }
