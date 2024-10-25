@@ -50,6 +50,11 @@ public class PlayerMovement : MonoBehaviour
     public MovementState state;
     //[SerializeField] private GravityChange _gravityChange;
 
+    public Transform startRotation;
+    public Transform endRotation;
+
+    private float timeCount = 0.0f;
+
     public enum MovementState
     {
         walking,
