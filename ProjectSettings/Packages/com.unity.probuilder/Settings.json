@@ -98,6 +98,7 @@
             },
             {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "FillHole.selectEntirePath",
@@ -145,6 +146,8 @@
             },
             {
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
                 "type": "UnityEngine.ProBuilder.SelectMode, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "editor.selectMode",
                 "value": "{\"m_Value\":1}"
@@ -188,9 +191,13 @@
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 "value": "{\"m_Value\":{\"x\":3.4158849716186525,\"y\":2.8257815837860109,\"z\":7.795856475830078}}"
 =======
                 "value": "{\"m_Value\":{\"x\":3.1661033630371095,\"y\":3.401763677597046,\"z\":3.5640182495117189}}"
+>>>>>>> Stashed changes
+=======
+                "value": "{\"m_Value\":{\"x\":10.538778305053711,\"y\":4.112807750701904,\"z\":-11.304447174072266}}"
 >>>>>>> Stashed changes
             },
             {
@@ -229,6 +236,7 @@
                 "value": "{}"
             },
             {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
                 "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -275,6 +283,11 @@
                 "type": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "smoothing.PreviewOpacity",
                 "value": "{\"m_Value\":0.3919999897480011}"
+>>>>>>> Stashed changes
+=======
+                "type": "UnityEngine.ProBuilder.ExtrudeMethod, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "key": "editor.extrudeMethod",
+                "value": "{\"m_Value\":2}"
 >>>>>>> Stashed changes
             }
         ]
