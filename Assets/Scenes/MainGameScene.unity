@@ -1232,8 +1232,8 @@ MonoBehaviour:
     m_Bits: 64
   maxSlopeAngle: 40
   state: 0
-  startRotation: {fileID: 0}
-  endRotation: {fileID: 0}
+  startRotation: {fileID: 222275536}
+  endRotation: {fileID: 222275536}
 --- !u!114 &222275538
 MonoBehaviour:
   m_ObjectHideFlags: 0
