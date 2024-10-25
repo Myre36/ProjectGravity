@@ -20,22 +20,22 @@ public class GravityComponent : MonoBehaviour
         switch (gravityStatus)
         {
             case 0:
-                rb.AddForce(new Vector3(0f, -9.81f, 0f));
+                rb.AddForce(new Vector3(0f, (-9.81f * rb.mass), 0f));
                 break;
             case 1:
-                rb.AddForce(new Vector3(0f, 9.81f, 0f));
+                rb.AddForce(new Vector3(0f, (9.81f * rb.mass), 0f));
                 break;
             case 2:
-                rb.AddForce(new Vector3(0f, 0f, 9.81f));
+                rb.AddForce(new Vector3(0f, 0f, (9.81f * rb.mass)));
                 break;
             case 3:
-                rb.AddForce(new Vector3(0f, 0f, -9.81f));
+                rb.AddForce(new Vector3(0f, 0f, (-9.81f * rb.mass)));
                 break;
             case 4:
-                rb.AddForce(new Vector3(-9.81f, 0f, 0f));
+                rb.AddForce(new Vector3((-9.81f * rb.mass), 0f, 0f));
                 break;
             case 5:
-                rb.AddForce(new Vector3(9.81f, 0f, 0f));
+                rb.AddForce(new Vector3((9.81f * rb.mass), 0f, 0f));
                 break;
             default:
                 break;
