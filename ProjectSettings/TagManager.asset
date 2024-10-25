@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+  - buttons
+  - doors
   layers:
   - Default
   - TransparentFX
