@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -50,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
     public MovementState state;
     //[SerializeField] private GravityChange _gravityChange;
 
+    public TMP_Text gravityText;
+
     public enum MovementState
     {
         walking,
@@ -66,6 +69,8 @@ public class PlayerMovement : MonoBehaviour
 
         startYScale = transform.localScale.y;
         canCrouch = true;
+
+        gravityText.text = "You are falling down";
     }
 
     private void Update()
@@ -95,6 +100,8 @@ public class PlayerMovement : MonoBehaviour
         //Normal gravity
         if (Input.GetKeyDown(KeyCode.E) && GetComponent<GravityComponent>().gravityStatus != 0)
         {
+            gravityText.text = "You are falling down";
+
             GetComponent<GravityComponent>().gravityStatus = 0;
 
             yRotation = transform.localRotation.y;
@@ -106,6 +113,8 @@ public class PlayerMovement : MonoBehaviour
         //Up gravity
         if (Input.GetKeyDown(KeyCode.R) && GetComponent<GravityComponent>().gravityStatus != 1)
         {
+            gravityText.text = "You are falling up";
+
             GetComponent<GravityComponent>().gravityStatus = 1;
 
             yRotation = transform.localRotation.y;
@@ -117,6 +126,8 @@ public class PlayerMovement : MonoBehaviour
         //North gravity
         if (Input.GetKeyDown(KeyCode.T) && GetComponent<GravityComponent>().gravityStatus != 2)
         {
+            gravityText.text = "You are falling north";
+
             GetComponent<GravityComponent>().gravityStatus = 2;
 
             yRotation = transform.rotation.y;
@@ -128,6 +139,8 @@ public class PlayerMovement : MonoBehaviour
         //South gravity
         if (Input.GetKeyDown(KeyCode.Y) && GetComponent<GravityComponent>().gravityStatus != 3)
         {
+            gravityText.text = "You are falling south";
+
             GetComponent<GravityComponent>().gravityStatus = 3;
 
             yRotation = transform.rotation.y;
@@ -139,6 +152,8 @@ public class PlayerMovement : MonoBehaviour
         //West gravity
         if (Input.GetKeyDown(KeyCode.U) && GetComponent<GravityComponent>().gravityStatus != 4)
         {
+            gravityText.text = "You are falling west";
+
             GetComponent<GravityComponent>().gravityStatus = 4;
 
             yRotation = transform.rotation.y;
@@ -150,6 +165,8 @@ public class PlayerMovement : MonoBehaviour
         //East gravity
         if (Input.GetKeyDown(KeyCode.I) && GetComponent<GravityComponent>().gravityStatus != 5)
         {
+            gravityText.text = "You are falling east";
+
             GetComponent<GravityComponent>().gravityStatus = 5;
 
             yRotation = transform.rotation.y;
