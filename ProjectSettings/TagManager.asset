@@ -9,6 +9,7 @@ TagManager:
   - doors
   - GolfBall
   - Interactable
+  - KillFloor
   layers:
   - Default
   - TransparentFX
