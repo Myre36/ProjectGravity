@@ -294,9 +294,9 @@ GameObject:
   - component: {fileID: 63149915}
   - component: {fileID: 63149914}
   - component: {fileID: 63149913}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InteractableCube (3)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1306,9 +1306,9 @@ GameObject:
   - component: {fileID: 154446061}
   - component: {fileID: 154446060}
   - component: {fileID: 154446059}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1679,9 +1679,9 @@ GameObject:
   - component: {fileID: 166938446}
   - component: {fileID: 166938450}
   - component: {fileID: 166938451}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InteractableCube
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3268,9 +3268,9 @@ GameObject:
   - component: {fileID: 295469650}
   - component: {fileID: 295469649}
   - component: {fileID: 295469648}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InteractableCylinder
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4650,9 +4650,9 @@ GameObject:
   - component: {fileID: 385265938}
   - component: {fileID: 385265937}
   - component: {fileID: 385265936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InteractableCube (1)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6469,9 +6469,9 @@ GameObject:
   - component: {fileID: 634254974}
   - component: {fileID: 634254973}
   - component: {fileID: 634254972}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InteractableCube (5)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6616,9 +6616,9 @@ GameObject:
   - component: {fileID: 675440415}
   - component: {fileID: 675440414}
   - component: {fileID: 675440413}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InteractableCapsule
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10238,9 +10238,9 @@ GameObject:
   - component: {fileID: 1025218333}
   - component: {fileID: 1025218332}
   - component: {fileID: 1025218331}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InteractableCube (4)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14380,9 +14380,9 @@ GameObject:
   - component: {fileID: 1491209612}
   - component: {fileID: 1491209611}
   - component: {fileID: 1491209616}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InteractableSphere
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14698,9 +14698,9 @@ GameObject:
   - component: {fileID: 1547893461}
   - component: {fileID: 1547893460}
   - component: {fileID: 1547893459}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InteractableCube (2)
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

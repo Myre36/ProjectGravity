@@ -8,6 +8,7 @@ TagManager:
   - buttons
   - doors
   - GolfBall
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Ground
   - Player
   - Bullet
-  - 
+  - Interactable
   - 
   - 
   - 

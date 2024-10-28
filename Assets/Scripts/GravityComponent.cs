@@ -41,12 +41,4 @@ public class GravityComponent : MonoBehaviour
                 break;
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("Bullet"))
-        {
-            gravityStatus = collision.gameObject.GetComponent<BulletScript>().bulletType;
-        }
-    }
 }

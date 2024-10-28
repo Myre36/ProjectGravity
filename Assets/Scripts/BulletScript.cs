@@ -5,8 +5,14 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     public int bulletType = 0;
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
+        if(other.CompareTag("Interactable"))
+        {
+            other.GetComponent<GravityComponent>().gravityStatus = bulletType;
+        }
+
         Destroy(gameObject);
     }
 }
