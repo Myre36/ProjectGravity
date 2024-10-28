@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine;
-
 public class DoorController : MonoBehaviour
 {
     public int totalButtons = 3; 
