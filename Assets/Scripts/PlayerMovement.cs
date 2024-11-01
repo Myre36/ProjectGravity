@@ -349,7 +349,7 @@ public class PlayerMovement : MonoBehaviour
         return Vector3.ProjectOnPlane(moveDirection, slopeHit.normal).normalized;
     }
 
-    private void StartRotation()
+    public void StartRotation()
     {
         if (!rotating)
         {
