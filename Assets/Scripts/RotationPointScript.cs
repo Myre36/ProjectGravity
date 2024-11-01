@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class RotationPointScript : MonoBehaviour
 {
-    [SerializeField]
-    private int state;
-
     public Transform player;
 
     public void UpdateBallRotation(int state)
     {
         float yRotation = player.rotation.eulerAngles.y;
 
-        switch (state)
+        switch (player.GetComponent<GravityComponent>().gravityStatus)
         {
             case 0:
                 this.transform.rotation = Quaternion.Euler(0f, yRotation, 0);
