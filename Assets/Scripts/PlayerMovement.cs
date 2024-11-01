@@ -54,6 +54,17 @@ public class PlayerMovement : MonoBehaviour
 
     public TMP_Text gravityText;
 
+    //Benjamin code
+
+    [SerializeField]
+    bool rotating = false;
+
+    [SerializeField]
+    private RotationPointScript rotationPoint;
+
+    float rotationSpeed = 0.3f; //0.01f;
+    float timeCount = 0.0f;
+
     public enum MovementState
     {
         walking,
@@ -64,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        rotationPoint = FindObjectOfType<RotationPointScript>();
         rb = GetComponent<Rigidbody>();
         //rb.freezeRotation = true;
         readyToJump = true;
@@ -106,11 +118,13 @@ public class PlayerMovement : MonoBehaviour
 
             //yRotation = transform.eulerAngles.y;
 
-            yRotation = transform.rotation.y;
+            //yRotation = transform.rotation.y;
 
-            transform.localRotation = Quaternion.Euler(0, yRotation, 0f);
+            //transform.localRotation = Quaternion.Euler(0, yRotation, 0f);
 
             //pCamera.Flip(new Vector3(0, yRotation, 0f));
+
+            StartRotation();
         }
         //Up gravity
         if (Input.GetKeyDown(KeyCode.R) && GetComponent<GravityComponent>().gravityStatus != 1)
@@ -121,11 +135,13 @@ public class PlayerMovement : MonoBehaviour
 
             //yRotation = transform.eulerAngles.y;
 
-            yRotation = transform.rotation.y;
+            //yRotation = transform.rotation.y;
 
-            transform.localRotation = Quaternion.Euler(0f, yRotation, -180f);
+            //transform.localRotation = Quaternion.Euler(0f, yRotation, -180f);
 
             //pCamera.Flip(new Vector3(-180f, yRotation, 0f));
+
+            StartRotation();
         }
         //North gravity
         if (Input.GetKeyDown(KeyCode.T) && GetComponent<GravityComponent>().gravityStatus != 2)
@@ -136,11 +152,13 @@ public class PlayerMovement : MonoBehaviour
 
             //yRotation = transform.eulerAngles.y;
 
-            yRotation = transform.rotation.y;
+            //yRotation = transform.rotation.y;
 
-            transform.localRotation = Quaternion.Euler(-90, yRotation, 0f);
+            //transform.localRotation = Quaternion.Euler(-90, yRotation, 0f);
 
             //pCamera.Flip(new Vector3(-90, yRotation, 0f));
+
+            StartRotation();
         }
         //South gravity
         if (Input.GetKeyDown(KeyCode.Y) && GetComponent<GravityComponent>().gravityStatus != 3)
@@ -151,11 +169,13 @@ public class PlayerMovement : MonoBehaviour
 
             //yRotation = transform.eulerAngles.y;
 
-            yRotation = transform.rotation.y;
+            //yRotation = transform.rotation.y;
 
-            transform.localRotation = Quaternion.Euler(90, yRotation, 0f);
+            //transform.localRotation = Quaternion.Euler(90, yRotation, 0f);
 
             //pCamera.Flip(new Vector3(90, yRotation, 0f));
+
+            StartRotation();
         }
         //West gravity
         if (Input.GetKeyDown(KeyCode.U) && GetComponent<GravityComponent>().gravityStatus != 4)
@@ -166,11 +186,13 @@ public class PlayerMovement : MonoBehaviour
 
             //yRotation = transform.eulerAngles.y;
 
-            yRotation = transform.rotation.y;
+            //yRotation = transform.rotation.y;
 
-            transform.localRotation = Quaternion.Euler(0f, yRotation, -90f);
+            //transform.localRotation = Quaternion.Euler(0f, yRotation, -90f);
 
             //pCamera.Flip(new Vector3(0, yRotation, -90f));
+
+            StartRotation();
         }
         //East gravity
         if (Input.GetKeyDown(KeyCode.I) && GetComponent<GravityComponent>().gravityStatus != 5)
@@ -181,11 +203,13 @@ public class PlayerMovement : MonoBehaviour
 
             //yRotation = transform.eulerAngles.y;
 
-            yRotation = transform.rotation.y;
+            //yRotation = transform.rotation.y;
 
-            transform.localRotation = Quaternion.Euler(0f, yRotation, 90f);
+            //transform.localRotation = Quaternion.Euler(0f, yRotation, 90f);
 
             //pCamera.Flip(new Vector3(0, yRotation, 90f));
+
+            StartRotation();
         }
     }
 
@@ -325,5 +349,27 @@ public class PlayerMovement : MonoBehaviour
         return Vector3.ProjectOnPlane(moveDirection, slopeHit.normal).normalized;
     }
 
-    
+    private void StartRotation()
+    {
+        if (!rotating)
+        {
+            rotationPoint.UpdateBallRotation(GetComponent<GravityComponent>().gravityStatus);
+            StartCoroutine(RotatePlayer());
+        }
+    }
+
+    private IEnumerator RotatePlayer()
+    {
+        rotating = true;
+        timeCount = 0f;
+        Quaternion endRot = rotationPoint.transform.rotation;
+
+        while (timeCount < 0.15f)
+        {
+            timeCount += Time.deltaTime * rotationSpeed;
+            transform.rotation = Quaternion.Slerp(transform.rotation, endRot, timeCount);
+            yield return null;
+        }
+        rotating = false;
+    }
 }
