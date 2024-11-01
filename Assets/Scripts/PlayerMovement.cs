@@ -52,8 +52,6 @@ public class PlayerMovement : MonoBehaviour
     public MovementState state;
     //[SerializeField] private GravityChange _gravityChange;
 
-    public float yRotation;
-
     public TMP_Text gravityText;
 
     public enum MovementState
@@ -96,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = 0;
         }
 
-        
+        float yRotation;
         
 
         //Normal gravity
@@ -106,7 +104,9 @@ public class PlayerMovement : MonoBehaviour
 
             GetComponent<GravityComponent>().gravityStatus = 0;
 
-            yRotation = transform.localRotation.y;
+            //yRotation = transform.eulerAngles.y;
+
+            yRotation = transform.rotation.y;
 
             transform.localRotation = Quaternion.Euler(0, yRotation, 0f);
 
@@ -119,7 +119,9 @@ public class PlayerMovement : MonoBehaviour
 
             GetComponent<GravityComponent>().gravityStatus = 1;
 
-            yRotation = transform.localRotation.y;
+            //yRotation = transform.eulerAngles.y;
+
+            yRotation = transform.rotation.y;
 
             transform.localRotation = Quaternion.Euler(0f, yRotation, -180f);
 
@@ -132,9 +134,11 @@ public class PlayerMovement : MonoBehaviour
 
             GetComponent<GravityComponent>().gravityStatus = 2;
 
+            //yRotation = transform.eulerAngles.y;
+
             yRotation = transform.rotation.y;
 
-            transform.rotation = Quaternion.Euler(-90, yRotation, 0f);
+            transform.localRotation = Quaternion.Euler(-90, yRotation, 0f);
 
             //pCamera.Flip(new Vector3(-90, yRotation, 0f));
         }
@@ -145,9 +149,11 @@ public class PlayerMovement : MonoBehaviour
 
             GetComponent<GravityComponent>().gravityStatus = 3;
 
+            //yRotation = transform.eulerAngles.y;
+
             yRotation = transform.rotation.y;
 
-            transform.rotation = Quaternion.Euler(90, yRotation, 0f);
+            transform.localRotation = Quaternion.Euler(90, yRotation, 0f);
 
             //pCamera.Flip(new Vector3(90, yRotation, 0f));
         }
@@ -158,9 +164,11 @@ public class PlayerMovement : MonoBehaviour
 
             GetComponent<GravityComponent>().gravityStatus = 4;
 
+            //yRotation = transform.eulerAngles.y;
+
             yRotation = transform.rotation.y;
 
-            transform.rotation = Quaternion.Euler(0f, yRotation, -90f);
+            transform.localRotation = Quaternion.Euler(0f, yRotation, -90f);
 
             //pCamera.Flip(new Vector3(0, yRotation, -90f));
         }
@@ -171,9 +179,11 @@ public class PlayerMovement : MonoBehaviour
 
             GetComponent<GravityComponent>().gravityStatus = 5;
 
+            //yRotation = transform.eulerAngles.y;
+
             yRotation = transform.rotation.y;
 
-            transform.rotation = Quaternion.Euler(0f, yRotation, 90f);
+            transform.localRotation = Quaternion.Euler(0f, yRotation, 90f);
 
             //pCamera.Flip(new Vector3(0, yRotation, 90f));
         }
