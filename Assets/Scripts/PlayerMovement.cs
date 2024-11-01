@@ -52,6 +52,8 @@ public class PlayerMovement : MonoBehaviour
     public MovementState state;
     //[SerializeField] private GravityChange _gravityChange;
 
+    public float yRotation;
+
     public TMP_Text gravityText;
 
     public enum MovementState
@@ -94,8 +96,7 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = 0;
         }
 
-        float yRotation;
-
+        
         
 
         //Normal gravity

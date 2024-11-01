@@ -35,12 +35,5 @@ public class PlayerCamera : MonoBehaviour
         player.transform.Rotate(Vector3.up, mouseX, Space.Self);
     }
 
-    /*public void Flip(Vector3 targetPlayerRotation)
-    {
-        Quaternion cRotation = transform.rotation;
-
-        player.transform.rotation = Quaternion.Euler(targetPlayerRotation);
-
-        Quaternion newCRotation = transform.rotation;
-    }*/
+    
 }
