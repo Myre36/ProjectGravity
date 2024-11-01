@@ -314,11 +314,5 @@ public class PlayerMovement : MonoBehaviour
         return Vector3.ProjectOnPlane(moveDirection, slopeHit.normal).normalized;
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("KillFloor"))
-        {
-            SceneManager.LoadScene("MainGameScene");
-        }
-    }
+    
 }
