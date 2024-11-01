@@ -65,6 +65,8 @@ public class PlayerMovement : MonoBehaviour
     float rotationSpeed = 0.3f; //0.01f;
     float timeCount = 0.0f;
 
+    
+
     public enum MovementState
     {
         walking,
@@ -88,6 +90,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+
+        
 
         //Ground check
         grounded = Physics.Raycast(transform.position, -1 * transform.up, playerHeight * 0.5f + 0.2f, whatIsGround);
