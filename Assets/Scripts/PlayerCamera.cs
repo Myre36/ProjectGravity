@@ -28,9 +28,11 @@ public class PlayerCamera : MonoBehaviour
             gravityWheel.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            Time.timeScale = 0.5f;
         }
         else
         {
+            Time.timeScale = 1.0f;
             gravityWheel.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;

@@ -120,6 +120,30 @@ public class PlayerMovement : MonoBehaviour
 
             GetComponent<GravityComponent>().gravityStatus = gravityNumber;
 
+            switch(gravityNumber)
+            {
+                case 0:
+                    gravityText.text = "You are falling down";
+                    break;
+                case 1:
+                    gravityText.text = "You are falling up";
+                    break;
+                case 2:
+                    gravityText.text = "You are falling north";
+                    break;
+                case 3:
+                    gravityText.text = "You are falling south";
+                    break;
+                case 4:
+                    gravityText.text = "You are falling west";
+                    break;
+                case 5:
+                    gravityText.text = "You are falling east";
+                    break;
+                default:
+                    break;
+            }
+
             StartRotation();
         }
     }
