@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
     float rotationSpeed = 0.3f; //0.01f;
     float timeCount = 0.0f;
 
-    
+    public int gravityNumber = 0;
 
     public enum MovementState
     {
@@ -86,6 +86,8 @@ public class PlayerMovement : MonoBehaviour
         canCrouch = true;
 
         gravityText.text = "You are falling down";
+
+        gravityNumber = 0;
     }
 
     private void Update()
@@ -109,109 +111,14 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.drag = 0;
         }
-
-        float yRotation;
         
 
         //Normal gravity
-        if (Input.GetKeyDown(KeyCode.E) && GetComponent<GravityComponent>().gravityStatus != 0)
+        if (Input.GetKeyDown(KeyCode.E) && GetComponent<GravityComponent>().gravityStatus != gravityNumber)
         {
             gravityText.text = "You are falling down";
 
-            GetComponent<GravityComponent>().gravityStatus = 0;
-
-            //yRotation = transform.eulerAngles.y;
-
-            //yRotation = transform.rotation.y;
-
-            //transform.localRotation = Quaternion.Euler(0, yRotation, 0f);
-
-            //pCamera.Flip(new Vector3(0, yRotation, 0f));
-
-            StartRotation();
-        }
-        //Up gravity
-        if (Input.GetKeyDown(KeyCode.R) && GetComponent<GravityComponent>().gravityStatus != 1)
-        {
-            gravityText.text = "You are falling up";
-
-            GetComponent<GravityComponent>().gravityStatus = 1;
-
-            //yRotation = transform.eulerAngles.y;
-
-            //yRotation = transform.rotation.y;
-
-            //transform.localRotation = Quaternion.Euler(0f, yRotation, -180f);
-
-            //pCamera.Flip(new Vector3(-180f, yRotation, 0f));
-
-            StartRotation();
-        }
-        //North gravity
-        if (Input.GetKeyDown(KeyCode.T) && GetComponent<GravityComponent>().gravityStatus != 2)
-        {
-            gravityText.text = "You are falling north";
-
-            GetComponent<GravityComponent>().gravityStatus = 2;
-
-            //yRotation = transform.eulerAngles.y;
-
-            //yRotation = transform.rotation.y;
-
-            //transform.localRotation = Quaternion.Euler(-90, yRotation, 0f);
-
-            //pCamera.Flip(new Vector3(-90, yRotation, 0f));
-
-            StartRotation();
-        }
-        //South gravity
-        if (Input.GetKeyDown(KeyCode.Y) && GetComponent<GravityComponent>().gravityStatus != 3)
-        {
-            gravityText.text = "You are falling south";
-
-            GetComponent<GravityComponent>().gravityStatus = 3;
-
-            //yRotation = transform.eulerAngles.y;
-
-            //yRotation = transform.rotation.y;
-
-            //transform.localRotation = Quaternion.Euler(90, yRotation, 0f);
-
-            //pCamera.Flip(new Vector3(90, yRotation, 0f));
-
-            StartRotation();
-        }
-        //West gravity
-        if (Input.GetKeyDown(KeyCode.U) && GetComponent<GravityComponent>().gravityStatus != 4)
-        {
-            gravityText.text = "You are falling west";
-
-            GetComponent<GravityComponent>().gravityStatus = 4;
-
-            //yRotation = transform.eulerAngles.y;
-
-            //yRotation = transform.rotation.y;
-
-            //transform.localRotation = Quaternion.Euler(0f, yRotation, -90f);
-
-            //pCamera.Flip(new Vector3(0, yRotation, -90f));
-
-            StartRotation();
-        }
-        //East gravity
-        if (Input.GetKeyDown(KeyCode.I) && GetComponent<GravityComponent>().gravityStatus != 5)
-        {
-            gravityText.text = "You are falling east";
-
-            GetComponent<GravityComponent>().gravityStatus = 5;
-
-            //yRotation = transform.eulerAngles.y;
-
-            //yRotation = transform.rotation.y;
-
-            //transform.localRotation = Quaternion.Euler(0f, yRotation, 90f);
-
-            //pCamera.Flip(new Vector3(0, yRotation, 90f));
+            GetComponent<GravityComponent>().gravityStatus = gravityNumber;
 
             StartRotation();
         }

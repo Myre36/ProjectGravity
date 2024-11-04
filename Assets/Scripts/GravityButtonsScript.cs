@@ -10,6 +10,7 @@ public class GravityButtonsScript : MonoBehaviour
 
     public void ChangeGravity()
     {
-        //player.GetComponent<GravityComponent>().gravityStatus = rotationSetting;
+        player.GetComponent<PlayerMovement>().gravityNumber = rotationSetting;
+        player.GetComponent<LazerScript>().gravityType = rotationSetting;
     }
 }

@@ -19,38 +19,6 @@ public class LazerScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            gravityType = 0;
-
-            Shoot();
-        }
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            gravityType = 1;
-
-            Shoot();
-        }
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            gravityType = 2;
-
-            Shoot();
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            gravityType = 3;
-
-            Shoot();
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            gravityType = 4;
-
-            Shoot();
-        }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            gravityType = 5;
-
             Shoot();
         }
     }
