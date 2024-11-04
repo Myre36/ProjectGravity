@@ -9285,7 +9285,7 @@ Transform:
   m_GameObject: {fileID: 222275531}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89, y: 1.92, z: -9.4}
+  m_LocalPosition: {x: -89, y: 1.92, z: -14.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20079,7 +20079,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 625260434}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 625260436}
+        m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+        m_MethodName: ChangeGravity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &625260434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25986,7 +25998,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 824192825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824192827}
+        m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+        m_MethodName: ChangeGravity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &824192825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28590,7 +28614,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 889864296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 889864298}
+        m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+        m_MethodName: ChangeGravity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &889864296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42248,7 +42284,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1313055187}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1313055189}
+        m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+        m_MethodName: ChangeGravity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1313055187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63923,7 +63971,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1905770314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1905770316}
+        m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+        m_MethodName: ChangeGravity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1905770314
 MonoBehaviour:
   m_ObjectHideFlags: 0
