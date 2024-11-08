@@ -92,9 +92,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-
-        
-
         //Ground check
         grounded = Physics.Raycast(transform.position, -1 * transform.up, playerHeight * 0.5f + 0.2f, whatIsGround);
 
@@ -116,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
         //Normal gravity
         if (Input.GetKeyDown(KeyCode.E) && GetComponent<GravityComponent>().gravityStatus != gravityNumber)
         {
-            gravityText.text = "Gravity: Down";
+            //gravityText.text = "Gravity: Down";
 
             GetComponent<GravityComponent>().gravityStatus = gravityNumber;
 
@@ -293,6 +290,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    
+
     private IEnumerator RotatePlayer()
     {
         rotating = true;
@@ -303,7 +302,7 @@ public class PlayerMovement : MonoBehaviour
         {
             timeCount += Time.deltaTime * rotationSpeed;
             transform.rotation = Quaternion.Slerp(transform.rotation, endRot, timeCount);
-            yield return null;
+            yield return new WaitForEndOfFrame();
         }
         rotating = false;
     }
