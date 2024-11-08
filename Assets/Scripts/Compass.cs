@@ -6,7 +6,7 @@ using UnityEngine;
 public class Compass : MonoBehaviour
 {
     [SerializeField]
-    TMP_Text primDirectionText, primNeighbourDirectionText, secNeighbourDirectionText;
+    TMP_Text primDirectionText;
 
     [SerializeField]
     Transform playerLook;
@@ -48,22 +48,19 @@ public class Compass : MonoBehaviour
     void SetVerticalDirection(float pitch)
     {
         string primaryDirection = "";
-        string leftDirection = "";
-        string rightDirection = "";
+        
 
         if (pitch <= -45f && lastVerticalDirection != "Up")
         {
             primaryDirection = "Up";
             lastVerticalDirection = "Up";
-            leftDirection = "W";
-            rightDirection = "E";
+            
         }
         else if (pitch >= 45f && lastVerticalDirection != "Down")
         {
             primaryDirection = "Down";
             lastVerticalDirection = "Down";
-            leftDirection = "E";
-            rightDirection = "W";
+            
         }
         else
         {
@@ -71,8 +68,7 @@ public class Compass : MonoBehaviour
         }
 
         primDirectionText.text = primaryDirection;
-        primNeighbourDirectionText.text = leftDirection;
-        secNeighbourDirectionText.text = rightDirection;
+        
     }
 
     void SetHorizontalDirection(float yaw, float pitch)
@@ -81,8 +77,7 @@ public class Compass : MonoBehaviour
             return;
 
         string primaryDirection = "";
-        string leftDirection = "";
-        string rightDirection = "";
+        
 
         yaw = yaw % 360;
 
@@ -92,50 +87,41 @@ public class Compass : MonoBehaviour
         {
             case 0:
                 primaryDirection = "N";
-                leftDirection = "NW";
-                rightDirection = "NE";
+                
                 break;
             case 1:
                 primaryDirection = "NE";
-                leftDirection = "N";
-                rightDirection = "E";
+                
                 break;
             case 2:
                 primaryDirection = "E";
-                leftDirection = "NE";
-                rightDirection = "SE";
+                
                 break;
             case 3:
                 primaryDirection = "SE";
-                leftDirection = "E";
-                rightDirection = "S";
+                
                 break;
             case 4:
                 primaryDirection = "S";
-                leftDirection = "SE";
-                rightDirection = "SW";
+                
                 break;
             case 5:
                 primaryDirection = "SW";
-                leftDirection = "S";
-                rightDirection = "W";
+                
                 break;
             case 6:
                 primaryDirection = "W";
-                leftDirection = "SW";
-                rightDirection = "NW";
+                
                 break;
             case 7:
                 primaryDirection = "NW";
-                leftDirection = "W";
-                rightDirection = "N";
+                
                 break;
             default:
                 break;
         }
 
         primDirectionText.text = primaryDirection;
-        primNeighbourDirectionText.text = leftDirection;
-        secNeighbourDirectionText.text = rightDirection;
+        
     }
 }
