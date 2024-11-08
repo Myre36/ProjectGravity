@@ -55,15 +55,15 @@ public class Compass : MonoBehaviour
         {
             primaryDirection = "Up";
             lastVerticalDirection = "Up";
-            leftDirection = "West";
-            rightDirection = "East";
+            leftDirection = "W";
+            rightDirection = "E";
         }
         else if (pitch >= 45f && lastVerticalDirection != "Down")
         {
             primaryDirection = "Down";
             lastVerticalDirection = "Down";
-            leftDirection = "East";
-            rightDirection = "West";
+            leftDirection = "E";
+            rightDirection = "W";
         }
         else
         {
