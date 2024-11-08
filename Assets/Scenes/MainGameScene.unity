@@ -870,6 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &20618884
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1017,6 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &27667676
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2230,6 +2232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &69397787
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7311,6 +7314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 1
 --- !u!114 &222275539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14298,6 +14302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &610429884
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15553,6 +15558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &664014151
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20235,6 +20241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &908941365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24194,6 +24201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1033420417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26660,6 +26668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 1
+  isPlayer: 0
 --- !u!54 &1133257892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28384,6 +28393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1183254107
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29841,6 +29851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1223048556
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31575,6 +31586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1324523516
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35270,6 +35282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1559321096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35582,6 +35595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1570117658
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39028,6 +39042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1691184357
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41165,6 +41180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1803796765
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41477,6 +41493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1820423593
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41624,6 +41641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
+  isPlayer: 0
 --- !u!54 &1828327174
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Interactable"))
+        if (other.CompareTag("Interactable"))
         {
             other.GetComponent<GravityComponent>().gravityStatus = bulletType;
         }
