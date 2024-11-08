@@ -86,7 +86,7 @@ public class Compass : MonoBehaviour
         switch (directionZone)
         {
             case 0:
-                primaryDirection = "N";
+                primaryDirection = "North";
                 
                 break;
             case 1:
@@ -94,7 +94,7 @@ public class Compass : MonoBehaviour
                 
                 break;
             case 2:
-                primaryDirection = "E";
+                primaryDirection = "East";
                 
                 break;
             case 3:
@@ -102,7 +102,7 @@ public class Compass : MonoBehaviour
                 
                 break;
             case 4:
-                primaryDirection = "S";
+                primaryDirection = "South";
                 
                 break;
             case 5:
@@ -110,7 +110,7 @@ public class Compass : MonoBehaviour
                 
                 break;
             case 6:
-                primaryDirection = "W";
+                primaryDirection = "West";
                 
                 break;
             case 7:

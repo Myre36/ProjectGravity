@@ -13,7 +13,7 @@ public class KillPlayerScript : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.transform.position = checkPoint.position;
-            gravityText.text = "You are falling down";
+            gravityText.text = "Gravity: Down";
             collision.gameObject.GetComponent<GravityComponent>().gravityStatus = 0;
             collision.gameObject.GetComponent<PlayerMovement>().StartRotation();
             collision.gameObject.transform.rotation = checkPoint.rotation;

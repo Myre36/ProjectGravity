@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         startYScale = transform.localScale.y;
         canCrouch = true;
 
-        gravityText.text = "You are falling down";
+        gravityText.text = "Gravity: Down";
 
         gravityNumber = 0;
     }
@@ -116,29 +116,29 @@ public class PlayerMovement : MonoBehaviour
         //Normal gravity
         if (Input.GetKeyDown(KeyCode.E) && GetComponent<GravityComponent>().gravityStatus != gravityNumber)
         {
-            gravityText.text = "You are falling down";
+            gravityText.text = "Gravity: Down";
 
             GetComponent<GravityComponent>().gravityStatus = gravityNumber;
 
             switch(gravityNumber)
             {
                 case 0:
-                    gravityText.text = "You are falling down";
+                    gravityText.text = "Gravity: Down";
                     break;
                 case 1:
-                    gravityText.text = "You are falling up";
+                    gravityText.text = "Gravity: Up";
                     break;
                 case 2:
-                    gravityText.text = "You are falling north";
+                    gravityText.text = "Gravity: North";
                     break;
                 case 3:
-                    gravityText.text = "You are falling south";
+                    gravityText.text = "Gravity: South";
                     break;
                 case 4:
-                    gravityText.text = "You are falling west";
+                    gravityText.text = "Gravity: West";
                     break;
                 case 5:
-                    gravityText.text = "You are falling east";
+                    gravityText.text = "Gravity: East";
                     break;
                 default:
                     break;
