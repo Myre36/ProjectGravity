@@ -304,6 +304,7 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, endRot, timeCount);
             yield return new WaitForEndOfFrame();
         }
+        transform.rotation = endRot;
         rotating = false;
     }
 }
