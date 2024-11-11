@@ -870,7 +870,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &20618884
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1018,7 +1017,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &27667676
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2232,7 +2230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &69397787
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7314,7 +7311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 1
 --- !u!114 &222275539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8166,7 +8162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b51f5fdef4c9640916dd5f6cc98b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSetting: 1
+  rotationSetting: 0
   player: {fileID: 222275531}
 --- !u!114 &286197418
 MonoBehaviour:
@@ -8187,7 +8183,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 286197417}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
-          m_MethodName: ChangeGravity
+          m_MethodName: ChangeGravityUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14302,7 +14298,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &610429884
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14844,7 +14839,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 625260436}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
-          m_MethodName: ChangeGravity
+          m_MethodName: ChangeGravityUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15558,7 +15553,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &664014151
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18857,7 +18851,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 824192827}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
-          m_MethodName: ChangeGravity
+          m_MethodName: ChangeGravityForward
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -20182,7 +20176,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 889864298}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
-          m_MethodName: ChangeGravity
+          m_MethodName: ChangeGravityRight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -20241,7 +20235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &908941365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24201,7 +24194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1033420417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26668,7 +26660,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 1
-  isPlayer: 0
 --- !u!54 &1133257892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28393,7 +28384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1183254107
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29851,7 +29841,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1223048556
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31362,7 +31351,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1313055189}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
-          m_MethodName: ChangeGravity
+          m_MethodName: ChangeGravityLeft
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -31586,7 +31575,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1324523516
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35282,7 +35270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1559321096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35595,7 +35582,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1570117658
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39042,7 +39028,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1691184357
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41180,7 +41165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1803796765
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41493,7 +41477,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1820423593
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41641,7 +41624,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityStatus: 0
-  isPlayer: 0
 --- !u!54 &1828327174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43743,7 +43725,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1905770316}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
-          m_MethodName: ChangeGravity
+          m_MethodName: ChangeGravityBackwards
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
