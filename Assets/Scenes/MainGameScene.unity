@@ -7257,7 +7257,7 @@ Transform:
   m_GameObject: {fileID: 222275531}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89, y: 1.92, z: -14.58}
+  m_LocalPosition: {x: -89, y: 1.92, z: -10.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8162,7 +8162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b51f5fdef4c9640916dd5f6cc98b5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSetting: 0
+  rotationSetting: 1
   player: {fileID: 222275531}
 --- !u!114 &286197418
 MonoBehaviour:
@@ -8184,6 +8184,22 @@ MonoBehaviour:
         - m_Target: {fileID: 286197417}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
           m_MethodName: ChangeGravityUp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286197417}
+          m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+          m_MethodName: ResetButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14849,6 +14865,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 625260436}
+          m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+          m_MethodName: ResetButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &630299555
 GameObject:
   m_ObjectHideFlags: 0
@@ -18861,6 +18893,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 824192827}
+          m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+          m_MethodName: ResetButton
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &829473663
 GameObject:
   m_ObjectHideFlags: 0
@@ -20177,6 +20225,22 @@ MonoBehaviour:
         - m_Target: {fileID: 889864298}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
           m_MethodName: ChangeGravityRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 889864298}
+          m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+          m_MethodName: ResetButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -31352,6 +31416,22 @@ MonoBehaviour:
         - m_Target: {fileID: 1313055189}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
           m_MethodName: ChangeGravityLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1313055189}
+          m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+          m_MethodName: ResetButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -43726,6 +43806,22 @@ MonoBehaviour:
         - m_Target: {fileID: 1905770316}
           m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
           m_MethodName: ChangeGravityBackwards
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1905770316}
+          m_TargetAssemblyTypeName: GravityButtonsScript, Assembly-CSharp
+          m_MethodName: ResetButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
