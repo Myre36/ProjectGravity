@@ -8,7 +8,7 @@ public class GolfHoleScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("GolfBall"))
+        if (other.CompareTag("Interactable"))
         {
             ballInHole = true;
         }
