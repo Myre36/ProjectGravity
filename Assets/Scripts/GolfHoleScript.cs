@@ -6,11 +6,18 @@ public class GolfHoleScript : MonoBehaviour
 {
     public bool ballInHole;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Interactable"))
         {
             ballInHole = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Interactable"))
+        {
+            ballInHole = false;
         }
     }
 }

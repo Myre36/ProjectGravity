@@ -22,12 +22,14 @@ public class PressurePlateDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach(var i in buttons)
+        if (transform.position == endPoint.position)
         {
-            if(transform.position == endPoint.position)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
+        }
+
+        foreach (var i in buttons)
+        {
+            
 
             if(i.GetComponent<GolfHoleScript>().ballInHole == true)
             {
