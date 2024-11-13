@@ -14,17 +14,12 @@ public class Compass : MonoBehaviour
     [SerializeField]
     float primFontSize;
 
-    float secFontSize;
-
     [SerializeField]
     float secFontOpacity;
 
-    private string lastVerticalDirection = "";
 
-    void Start()
-    {
-        secFontSize = primFontSize * 0.8f;
-    }
+
+    
 
     void Update()
     {
@@ -42,7 +37,7 @@ public class Compass : MonoBehaviour
 
         SetHorizontalDirection(yaw, pitch);
 
-        //Debug.Log($"Yaw: {yaw}, Pitch: {pitch}");
+        Debug.Log($"Yaw: {yaw}, Pitch: {pitch}");
     }
 
     void SetVerticalDirection(float pitch)
@@ -50,16 +45,14 @@ public class Compass : MonoBehaviour
         string primaryDirection = "";
         
 
-        if (pitch <= -45f && lastVerticalDirection != "Up")
+        if (pitch <= -45f)
         {
             primaryDirection = "Up";
-            lastVerticalDirection = "Up";
             
         }
-        else if (pitch >= 45f && lastVerticalDirection != "Down")
+        else if (pitch >= 45f)
         {
             primaryDirection = "Down";
-            lastVerticalDirection = "Down";
             
         }
         else
