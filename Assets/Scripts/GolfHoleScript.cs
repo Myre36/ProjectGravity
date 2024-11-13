@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class GolfHoleScript : MonoBehaviour
 {
-    public bool ballInHole;
+    
 
-    private void OnTriggerStay(Collider other)
+    public GameObject door;
+
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Interactable"))
         {
-            ballInHole = true;
+            door.GetComponent<PressurePlateDoor>().buttonsPressed++;
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Interactable"))
         {
-            ballInHole = false;
+            door.GetComponent<PressurePlateDoor>().buttonsPressed--;
         }
     }
 }
