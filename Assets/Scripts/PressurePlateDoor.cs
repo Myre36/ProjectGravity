@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PressurePlateDoor : MonoBehaviour
 {
-    public GameObject[] buttons;
-
     public Transform startPoint;
     public Transform endPoint;
 
     public float speed;
 
     private bool open;
+
+    public int assignedNumber;
+
+    public int buttonsPressed;
 
     // Start is called before the first frame update
     void Start()
@@ -27,18 +29,13 @@ public class PressurePlateDoor : MonoBehaviour
             Destroy(gameObject);
         }
 
-        foreach (var i in buttons)
+        if(buttonsPressed >= assignedNumber)
         {
-            
-
-            if(i.GetComponent<GolfHoleScript>().ballInHole == true)
-            {
-                open = true;
-            }
-            else
-            {
-                open = false;
-            }
+            open = true;
+        }
+        else
+        {
+            open = false;
         }
     }
 
