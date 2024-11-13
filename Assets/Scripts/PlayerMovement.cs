@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         
 
         //Normal gravity
-        if (Input.GetKeyDown(KeyCode.E) && GetComponent<GravityComponent>().gravityStatus != gravityNumber)
+        if (Input.GetKeyDown(KeyCode.E))
         {
             //gravityText.text = "Gravity: Down";
 

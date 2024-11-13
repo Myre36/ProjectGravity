@@ -42,7 +42,7 @@ public class Compass : MonoBehaviour
 
         SetHorizontalDirection(yaw, pitch);
 
-        Debug.Log($"Yaw: {yaw}, Pitch: {pitch}");
+        //Debug.Log($"Yaw: {yaw}, Pitch: {pitch}");
     }
 
     void SetVerticalDirection(float pitch)
