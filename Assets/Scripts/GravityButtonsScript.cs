@@ -8,64 +8,21 @@ public class GravityButtonsScript : MonoBehaviour
 
     public GameObject player;
 
-    private int lastGravitySetting;
+    public GameObject highlight;
 
-    public void ChangeGravityUp()
+    private void OnMouseOver()
     {
-        /*lastGravitySetting = rotationSetting;
-        switch(player.GetComponent<PlayerMovement>().gravityNumber)
-        {
-            case 0:
-                rotationSetting = 1; 
-                break;
-            case 1:
-                rotationSetting = 0;
-                break;
-            case 2:
-                rotationSetting = 3;
-                break;
-            case 3:
-                rotationSetting = 2;
-                break;
-            case 4:
-                rotationSetting = 5;
-                break;
-            case 5:
-                rotationSetting = 4;
-                break;
-        }*/
+        highlight.SetActive(true);
         player.GetComponent<PlayerMovement>().gravityNumber = rotationSetting;
         player.GetComponent<LazerScript>().gravityType = rotationSetting;
-    }
-    public void ChangeGravityForward()
-    {
-        //lastGravitySetting = rotationSetting;
-        player.GetComponent<PlayerMovement>().gravityNumber = rotationSetting;
-        player.GetComponent<LazerScript>().gravityType = rotationSetting;
-    }
-    public void ChangeGravityBackwards()
-    {
-        //lastGravitySetting = rotationSetting;
-        player.GetComponent<PlayerMovement>().gravityNumber = rotationSetting;
-        player.GetComponent<LazerScript>().gravityType = rotationSetting;
-    }
-    public void ChangeGravityLeft()
-    {
-        //lastGravitySetting = rotationSetting;
-        player.GetComponent<PlayerMovement>().gravityNumber = rotationSetting;
-        player.GetComponent<LazerScript>().gravityType = rotationSetting;
-    }
-    public void ChangeGravityRight()
-    {
-        //lastGravitySetting = rotationSetting;
-        player.GetComponent<PlayerMovement>().gravityNumber = rotationSetting;
-        player.GetComponent<LazerScript>().gravityType = rotationSetting;
+        Debug.Log("Testing: This is with setting " + rotationSetting);
     }
 
-    public void ResetButton()
+    
+    private void OnMouseExit()
     {
-        /*rotationSetting = lastGravitySetting;
-        player.GetComponent<PlayerMovement>().gravityNumber = rotationSetting;
-        player.GetComponent<LazerScript>().gravityType = rotationSetting;*/
+        highlight.SetActive(false);
     }
+
+    
 }
