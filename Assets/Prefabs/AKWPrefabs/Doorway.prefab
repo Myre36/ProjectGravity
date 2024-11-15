@@ -730,8 +730,10 @@ MonoBehaviour:
   m_VersionIndex: 953
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedEdges:
+  - a: 64
+    b: 65
+  m_SelectedVertices: 4000000041000000
 --- !u!23 &1462428566335648638
 MeshRenderer:
   m_ObjectHideFlags: 0
