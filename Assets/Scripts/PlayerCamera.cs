@@ -14,6 +14,7 @@ public class PlayerCamera : MonoBehaviour
     private float xRotation;
 
     public GameObject gravityWheel;
+    public GameObject gravityColliders;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class PlayerCamera : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             gravityWheel.SetActive(true);
+            gravityColliders.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             Time.timeScale = 0.5f;
@@ -34,6 +36,7 @@ public class PlayerCamera : MonoBehaviour
         {
             Time.timeScale = 1.0f;
             gravityWheel.SetActive(false);
+            gravityColliders.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
