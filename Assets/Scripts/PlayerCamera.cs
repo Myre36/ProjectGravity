@@ -16,10 +16,13 @@ public class PlayerCamera : MonoBehaviour
     public GameObject gravityWheel;
     public GameObject gravityColliders;
 
+    public Component[] highlights;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        highlights = gravityColliders.GetComponentsInChildren<GravityButtonsScript>();
     }
 
     private void Update()
@@ -35,6 +38,13 @@ public class PlayerCamera : MonoBehaviour
         else
         {
             Time.timeScale = 1.0f;
+            
+            foreach(GravityButtonsScript high in highlights)
+            {
+                high.DeactivateHighlight();
+            }
+
+
             gravityWheel.SetActive(false);
             gravityColliders.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;

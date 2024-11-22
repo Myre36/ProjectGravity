@@ -28,10 +28,14 @@ public class GravityButtonsScript : MonoBehaviour
     
     private void OnMouseExit()
     {
+        DeactivateHighlight();
+    }
+
+    public void DeactivateHighlight()
+    {
         highlight.SetActive(false);
         arrow.GetComponent<Renderer>().material = originalMaterial;
         arrowHead.GetComponent<Renderer>().material = originalMaterial;
     }
-
     
 }
