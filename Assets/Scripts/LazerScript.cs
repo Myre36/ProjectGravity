@@ -14,6 +14,8 @@ public class LazerScript : MonoBehaviour
 
     public int gravityType = 0;
 
+    public AudioSource laserSound;
+
     // Update is called once per frame
     void Update()
     {
@@ -28,6 +30,8 @@ public class LazerScript : MonoBehaviour
         //Find the exact hit position using a raycast
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f)); //A ray through the middle of your screen
         RaycastHit hit;
+
+        laserSound.Play();
 
         //Checks if ray hits something
         Vector3 targetPoint;

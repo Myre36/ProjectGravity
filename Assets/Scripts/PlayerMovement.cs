@@ -67,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
 
     public int gravityNumber = 0;
 
+    public AudioSource killSound;
+
     public enum MovementState
     {
         walking,
@@ -142,6 +144,14 @@ public class PlayerMovement : MonoBehaviour
             }
 
             StartRotation();
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("KillFloor"))
+        {
+            killSound.Play();
         }
     }
 

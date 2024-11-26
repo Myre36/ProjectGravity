@@ -15,7 +15,6 @@ public class KillPlayerScript : MonoBehaviour
             collision.gameObject.transform.position = checkPoint.position;
             gravityText.text = "Gravity: Down";
             collision.gameObject.GetComponent<GravityComponent>().gravityStatus = 0;
-            collision.gameObject.GetComponent<PlayerMovement>().StartRotation();
             collision.gameObject.transform.rotation = checkPoint.rotation;
         }
     }

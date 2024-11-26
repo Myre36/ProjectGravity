@@ -13,10 +13,16 @@ public class CloseDoorScript : MonoBehaviour
 
     public bool closed = false;
 
+    public AudioSource closeSound;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            if(closed == false)
+            {
+                closeSound.Play();
+            }
             closed = true;
         }
     }
