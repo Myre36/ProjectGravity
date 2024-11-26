@@ -64,6 +64,15 @@ public class PlayerCamera : MonoBehaviour
             player.transform.Rotate(Vector3.up, mouseX, Space.Self);
         }
 
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            foreach (GravityButtonsScript high in highlights)
+            {
+                high.DeactivateHighlight();
+            }
+            gravityWheel.SetActive(false);
+            gravityColliders.SetActive(false);
+        }
         
     }
 

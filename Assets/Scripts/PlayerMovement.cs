@@ -69,6 +69,12 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource killSound;
 
+    private bool paused;
+
+    public GameObject pCamera;
+
+    public GameObject pauseMenu;
+
     public enum MovementState
     {
         walking,
@@ -144,6 +150,30 @@ public class PlayerMovement : MonoBehaviour
             }
 
             StartRotation();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(paused == false)
+            {
+                paused = true;
+                Time.timeScale = 0;
+                pauseMenu.SetActive(true);
+                GetComponent<LazerScript>().enabled = false;
+                pCamera.GetComponent<PlayerCamera>().enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            else
+            {
+                paused = false;
+                Time.timeScale = 1;
+                pauseMenu.SetActive(false);
+                GetComponent<LazerScript>().enabled = true;
+                pCamera.GetComponent<PlayerCamera>().enabled = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
         }
     }
 
