@@ -10,15 +10,7 @@ public class BulletScript : MonoBehaviour
     {
         if (other.CompareTag("Interactable"))
         {
-            if (other.GetComponent<GravityComponent>().gravityStatus == bulletType)
-            {
-                other.GetComponent<GravityComponent>().enabled = false;
-            }
-            else
-            {
-                other.GetComponent<GravityComponent>().enabled = true;
-                other.GetComponent<GravityComponent>().gravityStatus = bulletType;
-            }
+            other.GetComponent<GravityComponent>().gravityStatus = bulletType;
         }
 
         Destroy(gameObject);
