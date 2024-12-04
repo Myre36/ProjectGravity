@@ -4,33 +4,39 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public int totalButtons = 3; 
-    private int buttonsPressed = 0; 
+    public Transform startPoint;
+    public Transform endPoint;
 
-    private void Start()
+    public float speed;
+
+    private bool open;
+
+    public int assignedNumber;
+
+    public int buttonsPressed;
+
+    // Update is called once per frame
+    void Update()
     {
-       
-    }
-
-    public void ButtonPressed()
-    {
-        buttonsPressed++;
-        Debug.Log($"Button pressed. {buttonsPressed}/{totalButtons} buttons activated.");
-
-        if (buttonsPressed >= totalButtons)
+        if (buttonsPressed >= assignedNumber)
         {
-            UnlockDoor();
+            open = true;
+        }
+        else
+        {
+            open = false;
         }
     }
 
-    private void UnlockDoor()
+    private void FixedUpdate()
     {
-        Debug.Log("All buttons pressed! Door is unlocked.");
-
-       
+        if (open == true)
         {
-            
-            Destroy(gameObject);
+            transform.position = Vector3.MoveTowards(transform.position, endPoint.position, speed);
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, startPoint.position, speed);
         }
     }
 }

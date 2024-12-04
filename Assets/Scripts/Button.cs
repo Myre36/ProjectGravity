@@ -22,7 +22,7 @@ public class Button : MonoBehaviour
                 audioButton.Play();
                 isPlaying = true;
             }
-            doorController.ButtonPressed();
+            //doorController.ButtonPressed();
             Debug.Log("Button pressed!");
             
             GetComponent<Renderer>().material.color = Color.green;
