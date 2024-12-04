@@ -15,19 +15,21 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.GetComponent<GravityComponent>().gravityStatus = bulletType;
+        
 
-        /*if (other.CompareTag("Interactable"))
+        if (other.CompareTag("Interactable"))
         {
-            if (other.gameObject.GetComponent<GravityComponent>().gravityStatus == bulletType)
+            other.GetComponent<GravityComponent>().gravityStatus = bulletType;
+
+            /*if (other.gameObject.GetComponent<GravityComponent>().gravityStatus == bulletType)
             {
                 other.gameObject.GetComponent<GravityComponent>().gravityStatus = player.GetComponent<GravityComponent>().gravityStatus;
             }
             else
             {
                 other.GetComponent<GravityComponent>().gravityStatus = bulletType;
-            }
-        }*/
+            }*/
+        }
 
         Destroy(gameObject);
     }
