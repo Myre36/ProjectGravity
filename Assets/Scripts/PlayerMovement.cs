@@ -50,9 +50,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
 
     public MovementState state;
-    //[SerializeField] private GravityChange _gravityChange;
-
-    public TMP_Text gravityText;
 
     //Benjamin code
 
@@ -93,8 +90,6 @@ public class PlayerMovement : MonoBehaviour
         startYScale = transform.localScale.y;
         canCrouch = true;
 
-        gravityText.text = "Gravity: Down";
-
         gravityNumber = 0;
     }
 
@@ -124,30 +119,6 @@ public class PlayerMovement : MonoBehaviour
             //gravityText.text = "Gravity: Down";
 
             GetComponent<GravityComponent>().gravityStatus = gravityNumber;
-
-            switch(gravityNumber)
-            {
-                case 0:
-                    gravityText.text = "Gravity: Down";
-                    break;
-                case 1:
-                    gravityText.text = "Gravity: Up";
-                    break;
-                case 2:
-                    gravityText.text = "Gravity: North";
-                    break;
-                case 3:
-                    gravityText.text = "Gravity: South";
-                    break;
-                case 4:
-                    gravityText.text = "Gravity: West";
-                    break;
-                case 5:
-                    gravityText.text = "Gravity: East";
-                    break;
-                default:
-                    break;
-            }
 
             StartRotation();
         }
@@ -293,7 +264,9 @@ public class PlayerMovement : MonoBehaviour
         exitingSlope = true;
 
         //Reset y velocity
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        //rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+        
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
