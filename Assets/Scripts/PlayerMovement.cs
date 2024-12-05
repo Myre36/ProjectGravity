@@ -72,6 +72,10 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject pauseMenu;
 
+    public GameObject primeDirection;
+
+    public GameObject crossHair;
+
     public enum MovementState
     {
         walking,
@@ -130,6 +134,8 @@ public class PlayerMovement : MonoBehaviour
                 paused = true;
                 Time.timeScale = 0;
                 pauseMenu.SetActive(true);
+                primeDirection.SetActive(false);
+                crossHair.SetActive(false);
                 GetComponent<LazerScript>().enabled = false;
                 pCamera.GetComponent<PlayerCamera>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
@@ -140,6 +146,8 @@ public class PlayerMovement : MonoBehaviour
                 paused = false;
                 Time.timeScale = 1;
                 pauseMenu.SetActive(false);
+                primeDirection.SetActive(true);
+                crossHair.SetActive(true);
                 GetComponent<LazerScript>().enabled = true;
                 pCamera.GetComponent<PlayerCamera>().enabled = true;
                 Cursor.lockState = CursorLockMode.Locked;
