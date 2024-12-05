@@ -343,8 +343,8 @@ MonoBehaviour:
 
     CREDITS'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
+  m_sharedMaterial: {fileID: 3927563188500900708, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -744,8 +744,8 @@ MonoBehaviour:
   m_text: Thank you for being part of our first project and for playing our little
     game :)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
+  m_sharedMaterial: {fileID: 3927563188500900708, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -986,10 +986,11 @@ MonoBehaviour:
     Karbu Wahlv\xE5g\r\n\nInga Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\n\n\nInga Sigurr\xF3s
     \xDE\xF3risd\xF3ttir\r\nAndreas Karbu Wahlv\xE5g\r\nHalld\xF3r Bj\xF6rnsson\r\n\n\nTrond
     Olav  Skevik\r\nSteven Thomas Ford\r\nMar\xEDa Gu\xF0mundsd\xF3ttir\n\nEvan Arntzen
-    Berg\r\nNedas Stani\u0161auskas\r\nValdemar Hermannsson\r\nUnity Asset Store\r\nPixabay\r\n\n"
+    Berg\r\nNedas Stani\u0161auskas\r\nValdemar Hermannsson\r\nIvar Bredeli\nUnity
+    Asset Store\r\nPixabay\r\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
+  m_sharedMaterial: {fileID: 3927563188500900708, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1191,8 +1192,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.462585, y: 9.6}
-  m_SizeDelta: {x: 291.624, y: 506.24}
+  m_AnchoredPosition: {x: -21.462585, y: 8.4946}
+  m_SizeDelta: {x: 291.624, y: 520.1204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1989373139
 MonoBehaviour:
@@ -1227,7 +1228,7 @@ MonoBehaviour:
     Sound designers
 
 
-    Game designer
+    Game designers
 
 
 
@@ -1235,12 +1236,11 @@ MonoBehaviour:
 
 
     Voice
-    actors
+    actor
 
 
 
     Writers and assistants
-
 
 
 
@@ -1255,8 +1255,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
+  m_sharedMaterial: {fileID: 3927563188500900708, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1280,8 +1280,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 26.1
+  m_fontSizeBase: 26.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
