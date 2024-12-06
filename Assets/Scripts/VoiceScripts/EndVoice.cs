@@ -30,6 +30,6 @@ public class EndVoice : MonoBehaviour
         yield return new WaitForSeconds(13);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Credits");
     }
 }

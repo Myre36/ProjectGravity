@@ -13,7 +13,12 @@ public class CloseDoorScript : MonoBehaviour
 
     public bool closed = false;
 
-    public AudioSource closeSound;
+    public GameObject closeDoorSound;
+
+    private void Start()
+    {
+        closeDoorSound = GameObject.Find("ClosingDoorSound");
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,7 +26,7 @@ public class CloseDoorScript : MonoBehaviour
         {
             if(closed == false)
             {
-                closeSound.Play();
+                closeDoorSound.GetComponent<AudioSource>().Play();
             }
             closed = true;
         }

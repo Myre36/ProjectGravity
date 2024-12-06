@@ -9,13 +9,18 @@ public class GolfHoleScript : MonoBehaviour
     public Material openMat;
     public Material closedMat;
 
-    public AudioSource buttonSound;
+    public GameObject buttonClickedSound;
+
+    private void Start()
+    {
+        buttonClickedSound = GameObject.Find("ButtonSoundEffect");
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Interactable"))
         {
-            buttonSound.Play();
+            buttonClickedSound.GetComponent<AudioSource>().Play();
             door.GetComponent<PressurePlateDoor>().buttonsPressed++;
             GetComponent<Renderer>().material = openMat;
         }
