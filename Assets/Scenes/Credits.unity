@@ -404,8 +404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 4, y: 91.9}
-  m_SizeDelta: {x: 461.09106, y: 50}
+  m_AnchoredPosition: {x: 4, y: 88.88349}
+  m_SizeDelta: {x: 461.0911, y: 87.8795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &288882429
 MonoBehaviour:
@@ -1121,8 +1121,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 4, y: -170.1}
-  m_SizeDelta: {x: 461.09106, y: 50}
+  m_AnchoredPosition: {x: 4, y: -183.55858}
+  m_SizeDelta: {x: 461.0911, y: 233.6109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1554644506
 MonoBehaviour:
@@ -1359,8 +1359,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 26.991001, y: 15.378391}
-  m_SizeDelta: {x: 390.708, y: 506.24}
+  m_AnchoredPosition: {x: 31.1553, y: -30.301811}
+  m_SizeDelta: {x: 449.7894, y: 1157.1421}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1620384595
 MonoBehaviour:
@@ -1382,15 +1382,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Halld\xF3r Bj\xF6rnsson\r\nDragota Ariana Roxana\r\nBenjamin Bruaset\r\n\nDragota
-    Ariana Roxana\r\nInga Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\nAndreas Karbu Wahlv\xE5g\r\n\nInga
-    Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\n\r\n\rHalld\xF3r Bj\xF6rnsson\r\nBenjamin
-    Bruaset\r\nDragota Ariana Roxana\r\nInga Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\nAndreas
-    Karbu Wahlv\xE5g\r\n\nInga Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\n\n\nInga Sigurr\xF3s
-    \xDE\xF3risd\xF3ttir\r\nAndreas Karbu Wahlv\xE5g\r\nHalld\xF3r Bj\xF6rnsson\r\n\n\nTrond
-    Olav Skevik\r\nSteven Thomas Ford\r\nMar\xEDa Gu\xF0mundsd\xF3ttir\n\nEvan Arntzen
-    Berg\r\nNedas Stanisauskas\r\nValdemar Hermannsson\r\nFrank Veenstra\nIvar Bredeli\nUnity
-    Asset Store\r\nPixabay\r\n\n"
+  m_text: "Halld\xF3r Bj\xF6rnsson\r\nBenjamin Bruaset\r\nDragota Ariana Roxana\r\nInga
+    Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\nAndreas Karbu Wahlv\xE5g\r\n\nHalld\xF3r
+    Bj\xF6rnsson\r\nBenjamin Bruaset\r\nDragota Ariana Roxana\r\n\nDragota Ariana
+    Roxana\r\nInga Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\nAndreas Karbu Wahlv\xE5g\r\n\nInga
+    Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\n\nInga Sigurr\xF3s \xDE\xF3risd\xF3ttir\nValdemar
+    Hermannsson - Credits song\n\nInga Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\n\nInga
+    Sigurr\xF3s \xDE\xF3risd\xF3ttir\nHalld\xF3r Bj\xF6rnsson\n\nAndreas Karbu Wahlv\xE5g\r\n\nInga
+    Sigurr\xF3s \xDE\xF3risd\xF3ttir\r\nHalld\xF3r Bj\xF6rnsson\r\n\nTrond Olav Skevik\r\nSteven
+    Thomas Ford\r\nMar\xEDa Gu\xF0mundsd\xF3ttir\n\nEvan Arntzen Berg - Audio equipment\nNedas
+    Stanisauskas - Models\nFrank Veenstra - Programming help\nIvar Bredeli - Programming
+    help\nUnity Asset Store\r\nPixabay\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
   m_sharedMaterial: {fileID: 3927563188500900708, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
@@ -1595,8 +1597,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.8, y: 14.4}
-  m_SizeDelta: {x: 291.624, y: 520.1204}
+  m_AnchoredPosition: {x: -22.8, y: -20.2}
+  m_SizeDelta: {x: 291.624, y: 1013.8203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1989373139
 MonoBehaviour:
@@ -1618,45 +1620,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Programmers
-
-
-
-
-    Artists
-
-
-
-
-    Sound designers
-
-
-    Game designers
-
-
-
-
-
-
-    Voice
-    actor
-
-
-
-    Writers and assistants
-
-
-
-
-    Supervisors
-
-
-
-
-    Special thanks
-    to
-
-'
+  m_text: "Game designers\n\n\n\n\n\nProgrammers\n\n\n\nArtists\n\n\n\nSound design\n\nMusic\n\n\nVoice
+    actor\n\nAudio editing\n\n\nWriter \n\nWriter assistants\n\n\nSupervisors\n\n\n\nSpecial
+    thanks to\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
   m_sharedMaterial: {fileID: 3927563188500900708, guid: 2f70ba006ffa2924cabdab030ae58983, type: 2}
